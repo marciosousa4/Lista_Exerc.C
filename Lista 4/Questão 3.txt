@@ -1,0 +1,17 @@
+int main(){
+    int i=3,j=5;
+    int *p,*q;
+    int a_res,b_res,c_res;
+    p = &i;
+    q = &j;
+    a_res = (p ==&i);
+    b_res = *p - *q;
+    c_res = (12+*p)/(*q)+7;
+    printf("a: %d\n",a_res);
+    printf("b: %d\n",b_res);
+    printf("c: %d\n",c_res);
+}
+
+a) 1                                      
+b) -2                               
+c) 10

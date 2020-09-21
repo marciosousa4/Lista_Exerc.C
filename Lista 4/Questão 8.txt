@@ -1,0 +1,19 @@
+#include<string.h>
+char* concatena(char *a, char *b){
+    int i;
+   for(i=0; a[i]!='\0'; ++i);
+   for(int j=0; b[j]!='\0'; ++j, ++i){
+      a[i]=b[j];
+   }
+    a[i]='\0';
+    return a;
+}
+int main (){
+    char a[250], b[250],res[250];
+    printf("Digite alguma coisa: ");
+    gets(a);
+    printf("Digite outra coisa: ");
+    gets(b);
+    printf(concatena(a,b));
+    getch();
+}

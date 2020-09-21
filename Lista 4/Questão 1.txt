@@ -1,0 +1,14 @@
+int main(){
+    int num1,num2,*p,*q;//Declaração das variáveis
+    num1 = 13;
+    num2 = 10;//Valores de num1 e num2
+    p = &num1;//p guarda o endereço de num1
+    q = p;//p(endereço de num1)passa para q o seu valor
+    *q = 56;//o valor da variável cujo endereço está em q (num1) passa a ser 56
+    printf("v1:%d\n",num1);
+    printf("v2:%d\n",num2);//print dos valores de num1 e num2
+    printf("p:%d\n",p);
+    printf("q:%d\n",q);//print do endereço guardado em p e q
+    printf("p:%d\n",*p);
+    printf("q:%d\n",*q);//print do valor da variável do endereço está em p e q
+}

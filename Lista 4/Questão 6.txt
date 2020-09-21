@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main ( ){
+ int num1,num2;//Declaração das variáveis
+ num1=100;
+ num2=200;//Inserção de valores
+ troca (&num1,&num2);//função sendo chamada(endereço de num1 = a, endereço de num2 = b)
+ printf ("\nEles agora valem %d %d\n",num1,num2);//print dos valores de num1 e num2 trocados
+ getch();
+}
+
+int troca (int *a,int *b){//função chamando os valores dos respectivos endereços
+ int temp;//declaração de variável
+ temp=*a;//o valor que está no endereço a passa para temp
+ *a=*b;//o valor que está no endereço b passa para o valor do endereço a
+ *b=temp;//o valor de temp passa para o valor do endereço b
+}

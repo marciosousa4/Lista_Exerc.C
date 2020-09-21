@@ -1,0 +1,19 @@
+#include <stdio.h>
+int troca (int a,int b);
+
+int main ( ){
+ int num1,num2;
+ num1=100;
+ num2=200;
+ troca (num1,num2);
+ printf ("\nEles agora valem %d %d\n",num1,num2);
+ getch();
+}
+
+int troca (int a,int b){
+ int temp;
+ temp=a;
+ a=b;
+ b=temp;// os valores ficaram armazenados em A e B, já que eles não são mais ponteiros. Portanto, a ordem dos valores de num1 e num2 não mudou.
+}
+

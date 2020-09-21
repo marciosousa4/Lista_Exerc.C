@@ -1,0 +1,8 @@
+int main(){
+    int x,*end;
+    printf("Insira um numero inteiro positivo: ");
+    scanf("%d",&x);
+    end = &x;
+    printf("Numero: %d\n",x);
+    printf("Endereco de memoria: %d\n",end);
+}
